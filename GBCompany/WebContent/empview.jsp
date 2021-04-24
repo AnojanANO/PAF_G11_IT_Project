@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
-<%@page import="model.Project" %>
+<%@page import="ProjectService.Project" %>
 
 <head>
     <meta charset="utf-8">

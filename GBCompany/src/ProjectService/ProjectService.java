@@ -1,5 +1,5 @@
 
-package EmployeeService;
+package ProjectService;
 
 
 //For REST Service
