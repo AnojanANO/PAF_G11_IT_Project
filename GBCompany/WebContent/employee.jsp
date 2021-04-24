@@ -59,6 +59,7 @@ i=true;
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="employee.jsp">Add Employee</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="empReview.jsp">View Employee</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="empview.jsp">View Project</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="items.jsp">add Project</a></li>
                     
                 </ul>
             </div>
