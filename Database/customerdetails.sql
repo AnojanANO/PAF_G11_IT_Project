@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 22, 2021 at 10:40 PM
+-- Generation Time: Apr 24, 2021 at 05:41 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -29,20 +29,23 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `customerdetails` (
   `customerID` int(10) NOT NULL,
-  `customerPassword` varchar(12) NOT NULL,
   `customerName` varchar(20) NOT NULL,
+  `customerEmail` varchar(20) NOT NULL,
   `customerPhone` varchar(10) NOT NULL,
-  `customerEmail` varchar(20) NOT NULL
+  `projecttype` varchar(200) NOT NULL,
+  `Description` varchar(200) NOT NULL,
+  `Duration` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `customerdetails`
 --
 
-INSERT INTO `customerdetails` (`customerID`, `customerPassword`, `customerName`, `customerPhone`, `customerEmail`) VALUES
-(7, '098765', 'Milukshan', '0987651', 'Milukshan@gmail.com'),
-(8, '123123', 'anojan', '0712356908', 'anojan@gmail.com'),
-(9, '555', 'RagavanAmalson', '98765', 'niolop@gmail.com');
+INSERT INTO `customerdetails` (`customerID`, `customerName`, `customerEmail`, `customerPhone`, `projecttype`, `Description`, `Duration`) VALUES
+(20, 'anojan', 'anojan@gmail.com', '0713457890', 'java', 'web application', 'at least 2 months'),
+(22, 'sivanujan', 'sivanujan@gmail.com', '074567890', 'web application', 'testing and validation', '10 months'),
+(23, 'helton', 'helton@gmail.com', '0987654', 'java', 'db', '3 month'),
+(25, 'vimal', 'vimal@gmail.com', '0998765', 'js', 'done', '1 month');
 
 --
 -- Indexes for dumped tables
@@ -62,9 +65,10 @@ ALTER TABLE `customerdetails`
 -- AUTO_INCREMENT for table `customerdetails`
 --
 ALTER TABLE `customerdetails`
-  MODIFY `customerID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `customerID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
