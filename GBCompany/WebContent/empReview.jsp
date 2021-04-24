@@ -31,9 +31,9 @@ session.setAttribute("statusMsg", stsMsg);
             <div class="collapse navbar-collapse"
                 id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="NEw.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="customer.jsp">Customer Request</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="request.jsp">View Request</a></li>
+                     <li class="nav-item" role="presentation"><a class="nav-link active" href="employee.jsp">Add Employee</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="empReview.jsp">View Employee</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="empview.jsp">View Project</a></li>
                     
                 </ul>
             </div>
