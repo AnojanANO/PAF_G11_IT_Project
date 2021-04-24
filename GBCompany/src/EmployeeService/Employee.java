@@ -1,4 +1,5 @@
 
+
 package EmployeeService;
 
 import java.sql.Connection;
@@ -83,7 +84,7 @@ public class Employee {
 	 
 			// Prepare the html table to be displayed
 	
-			output = "<table border='1'><tr><th>Employee Name</th><th>Employee Type</th>" +
+			output = "<table border='1' align='center'><tr><th>Employee Name</th><th>Employee Type</th>" +
 	                "<th>Employee Phone</th>" +
 	                "<th>Employee Email</th>" +
 	                "<th>Employee Password</th><th>Update</th><th>Remove</th></tr>";
