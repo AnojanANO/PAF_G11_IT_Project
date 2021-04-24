@@ -172,7 +172,7 @@ public class Project {
 	            output += "<td>" + Price + "</td>";
 	
 	            // buttons
-	           output +=  "<td><form method='post' action='items.jsp'>"
+	           output +=  "<td><form method='post' action='PaymentRegister.jsp'>"
 	        			 +"<input name='btnRemove' type='submit' value='BUY' class='btn btn-danger'>"
 
 	        			 + "<input name='ID' type='hidden' value='" + ID + "'> </form></td></tr>";
@@ -269,3 +269,4 @@ public class Project {
 		return output;
 	 } 
 }
+
