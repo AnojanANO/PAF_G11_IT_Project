@@ -10,9 +10,11 @@ if (request.getParameter("firstname") != null)
 {
 	 Payment Obj = new Payment();
 	 String stsMsg="";
+	 
 	if (request.getParameter("hidItemIDSave") == "")
 	 {
 	 
+		
 	 stsMsg = Obj.insertPayment(request.getParameter("firstname"),
 	 request.getParameter("lastname"),
 	 request.getParameter("amount"),
@@ -80,7 +82,7 @@ session.setAttribute("statusMsg", stsMsg);
 <center>
 		<h2>Payment Form</h2>
 	</center>
-	<form name="form" action="PaymentRegister.jsp" method="post"
+	<form name="form" action="viewItem.jsp" method="post"
 		onsubmit="return validate()">
 		<table align="center">
 			<tr>
@@ -101,23 +103,24 @@ session.setAttribute("statusMsg", stsMsg);
 			</tr>
 			<tr>
 				<td><label for="PaymentMethod">Payment Method</label></td>
-				<td><input type="text" class="form-control" name="PaymentMethod" /></td>
+				<td><input type="text" class="form-control"
+					name="PaymentMethod" /></td>
 			</tr>
-			
-			
+
+
 			<tr>
 				<td><%=(request.getAttribute("errMessage") == null) ? "" : request.getAttribute("errMessage")%></td>
 			</tr>
 			<tr>
 				<td></td>
-				<td><br>
-				<input class="btn btn-success"  name="btnSubmit" type="submit" value="Pay"></input> &nbsp; &nbsp; &nbsp; &nbsp;
-				<input type="hidden" id="hidItemIDSave" name="hidItemIDSave" value="">
+				<td><br> <input class="btn btn-success" name="btnSubmit"
+					type="submit" value="Pay"></input> &nbsp; &nbsp; &nbsp; &nbsp; <input
+					type="hidden" id="hidItemIDSave" name="hidItemIDSave" value="">
 			</tr>
 			<tr>
 				<br>
 				<br>
-					</tr>
+			</tr>
 		</table>
 	</form>
 </body>
